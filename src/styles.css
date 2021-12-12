@@ -12,11 +12,20 @@ h1 {
   color: var(--primary-color);
   font-weight: bold;
   font-size: 96px;
+  line-height: 1.5;
+}
+h2 {
+  font-family: var(--heading);
+  color: var(--primary-color);
+  font-size: 64px;
 }
 
 p {
   font-family: var(body-font);
   font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #121212;
 }
 .hero {
   background-color: #121212;
@@ -34,7 +43,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 24px;
-  line-height: 2;
+  line-height: 1.5;
   color: white;
   opacity: 87%;
 }
@@ -47,4 +56,47 @@ p {
   font-weight: bold;
   line-height: 27px;
   padding: 15px 30px;
+}
+.btn-branding-outline {
+  font-size: 18px;
+  background: white;
+  color: var(--cta-color);
+  line-height: 27px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 1px solid var(--cta-color);
+}
+.btn-branding-outline:hover {
+  font-size: 18px;
+  background: var(--cta-color);
+  color: white;
+  line-height: 27px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 1px solid var(--cta-color);
+  transition: all 150ms ease-in-out;
+}
+.project-description {
+  padding: 120px 60px;
+}
+@media (max-width: 768px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 52px;
+    line-height: 2;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero p {
+    font-size: 24px;
+    margin-bottom: -20px;
+    font-weight: normal;
+  }
 }
