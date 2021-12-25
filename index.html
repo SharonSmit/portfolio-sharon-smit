@@ -29,27 +29,60 @@
     ></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top navigation">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#my-work">My work </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-me">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="hero">
       <p>Hello! I am</p>
       <h1>Sharon Smit</h1>
-      <h2 class="mb-5">Front-end developer, based in The Netherlands</h2>
+      <h2 class="mb-5">Aspiring front-end developer, based in The Netherlands</h2>
       <div>
         <a href="about.html" class="btn btn-branding">Get started</a>
       </div>
     </div>
-    <p class="text-center m-5">Featured projects with my best project below</p>
-    <div class="container">
+    <p class="text-center m-5">Featured projects with my best project below  <i class="fas fa-angle-down arrow-down"></i>
+</p>
+    <div class="container" id="my-work">
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
           <img
-            src="images/yogurt-project.png"
+            src="images/Sleep-check-app.jpg"
             class="img-fluid"
             alt="Launch yogurt project"
           />
         </div>
         <div class="col">
           <div class="project-description">
-            <h2 class="mb-5">Yogurt Project</h2>
+            <h3 class="mb-0">MY WORK</h3>
+            <h2 class="mb-5">Sleep Project</h2>
             <p class="mb-5 text-muted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               hendrerit orci a ante mattis vestibulum. Nunc in varius dui. Morbi
@@ -63,6 +96,7 @@
       <div class="row mb-5">
         <div class="col">
           <div class="project-description">
+            <h3 class="mb-0">MY WORK</h3>
             <h2 class="mb-5">Weather App</h2>
             <p class="mb-5 text-muted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -70,12 +104,12 @@
               nec dictum enim. Curabitur ac commodo velit, ut blandit risus.
               Quisque convallis nibh a purus bibendum, vitae bibendum fusce.
             </p>
-            <a href="" class="btn btn-branding-outline"> Learn more </a>
+            <a href="https://distracted-haibt-b647cd.netlify.app" class="btn btn-branding-outline" target="blank"> Learn more </a>
           </div>
         </div>
         <div class="col d-none d-lg-block">
           <img
-            src="images/weather-project.png"
+            src="images/weather-app.jpg"
             class="img-fluid"
             alt="Launch weather project"
           />
@@ -84,13 +118,14 @@
       <div class="row">
         <div class="col d-none d-lg-block">
           <img
-            src="images/dictionary-project.png"
+            src="images/dictonary-app.jpg"
             class="img-fluid"
             alt="Launch dictionary project"
           />
         </div>
         <div class="col">
           <div class="project-description">
+            <h3 class="mb-0">MY WORK</h3>
             <h2 class="mb-5">Dictionary App</h2>
             <p class="mb-5 text-muted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -98,10 +133,52 @@
               nec dictum enim. Curabitur ac commodo velit, ut blandit risus.
               Quisque convallis nibh a purus bibendum, vitae bibendum fusce.
             </p>
-            <a href="" class="btn btn-branding-outline"> Learn more </a>
+            <a href="" class="btn btn-branding-outline mb-5"> Learn more </a>
           </div>
         </div>
       </div>
+    </div>
+    <div class="about-block" id="about-me">
+   <div class="row container">
+     <div class="col">
+      <h3 class="mb-0">ABOUT ME</h3>
+      <h2 class="mb-5">Sorem ipsum dolor sit amet</h2>
+      <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              hendrerit orci a ante mattis vestibulum. Nunc in varius dui. Morbi
+              nec dictum enim. Curabitur ac commodo velit, ut blandit risus.
+              Quisque convallis nibh a purus bibendum, vitae bibendum fusce.</p>
+        </div>
+        <div class="col d-none d-lg-block">
+          <img src="images/sharon-smit.jpg"
+              class="img-fluid profile-picture"
+              alt="Sharon Smit"/>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>          
+        </div>
+      </div>
+      <footer>
+        <div class="contact-me d-flex justify-content-center" id="contact-me">
+          <div>
+        <h3 class="mb-0">CONTACT ME</h3>
+            <h2>Work inquiry</h2>
+            <p class="text-muted">
+             Let's work together!
+            </p>
+            <a href="mailto:sharon.smit@gmail.com" class="btn btn-branding" target="blank">Contact me</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mb-3">
+        <a href="mailto:sharon.smit@gmail.com" class="email-links">sharon.smit@gmail.com</a>
+        </div>
+        <div class="social-links d-flex justify-content-center mb-5">
+          <a href="https://www.instagram.com/sharonsmittie/" target="blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sharon-noelle-smit/" target="blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/SharonSmit" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

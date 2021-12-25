@@ -7,7 +7,6 @@ font-family: 'Poppins', sans-serif; */
   --body-font: "Poppins", sans-serif;
   --background-color: #24191c;
 }
-
 h1 {
   font-family: var(--heading);
   color: var(--primary-color);
@@ -17,8 +16,13 @@ h1 {
 }
 h2 {
   font-family: var(--heading);
-  color: var(--primary-color);
+  color: var(--background-color);
   font-size: 64px;
+}
+h3 {
+  color: var(--primary-color);
+  font-family: var(--body-font);
+  font-size: 24px;
 }
 
 p {
@@ -31,7 +35,22 @@ p {
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 120px 20px;
+}
+.about-block {
+  background-color: var(--background-color);
+  text-align: left;
+  padding: 120px 20px;
+}
+.about-block h2 {
+  font-size: 64px;
+  color: white;
+  opacity: 87%;
+}
+.about-block p {
+  color: white;
+  opacity: 87%;
+  font-size: 18px;
 }
 .hero p {
   font-size: 36px;
@@ -58,6 +77,19 @@ p {
   line-height: 27px;
   padding: 15px 30px;
 }
+.btn-branding:hover {
+  background: white;
+  border-radius: 4px;
+  color: var(--cta-color);
+  opacity: 87%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  padding: 15px 30px;
+  border: 1px solid var(--cta-color);
+  transition: all 150ms ease-in-out;
+}
+
 .btn-branding-outline {
   font-size: 18px;
   background: white;
@@ -80,38 +112,47 @@ p {
 .project-description {
   padding: 120px 60px;
 }
-.about-hero h1 {
-  font-size: 96px;
-  color: white;
-  opacity: 87%;
-  line-height: 1;
-}
-.about-hero p {
-  font-family: var(--body-font);
-  color: white;
-  opacity: 87%;
-  font-size: 18px;
-}
-.about-hero h3 {
-  color: var(--primary-color);
-  font-family: var(--body-font);
-}
-.about-hero {
-  background-color: var(--background-color);
-  padding: 160px 20px;
-}
+
 .profile-picture {
   border-radius: 50%;
   max-width: 300px;
+  padding: 80px 0px;
 }
-.about-hero h2 {
+.logo {
+  max-height: 40px;
+}
+.navigation {
+  background-color: var(--background-color);
+}
+.arrow-down {
+  color: var(--primary-color);
+}
+
+footer .contact-me {
+  border: 1px solid var(--cta-color);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 60px 350px;
+  text-align: center;
+}
+footer .email-links {
+  text-decoration: none;
+  text-align: center;
+  color: var(--background-color);
   font-size: 18px;
-  font-family: var(--body-font);
-  color: white;
-  opacity: 87%;
+  font-weight: bold;
 }
-.about-intro {
-  margin: 30px;
+footer .email-links:hover {
+  color: var(--cta-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  font-size: 24px;
+  color: white;
+  background-color: var(--cta-color);
+  padding: 10px 18px;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   .project-description {
@@ -137,10 +178,11 @@ p {
     font-size: 52px;
   }
   .about-hero {
-    padding: 0;
+    padding: 80px 0px;
   }
   .profile-picture {
-    display: block;
-    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    padding: 40px 0px;
   }
 }
